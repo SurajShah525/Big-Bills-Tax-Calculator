@@ -1,0 +1,22 @@
+Preferably use Oracle 10g Express edition to avoid making changes in jdbc code
+
+SQL queries:
+
+create user bill_db identified by bill_db; 
+
+grant all privileges to bill_db;
+
+create table product_details (product varchar(50), category varchar(30),imported varchar(3), price float(10), primary key(product), check(price>0));
+
+
+insert all 
+into product_details values('book','Books','No',12.49)
+into product_details values('music CD','Luxury','No',14.99)
+into product_details values('chocolate bar','Food','No',0.85)
+into product_details values('imported chocolate','Food','yes',10.00)
+into product_details values('imported perfume','Luxury','yes',47.50)
+into product_details values('imported perfume 2','Luxury','Yes',27.99)
+into product_details values('Perfume','Luxury','No',18.99)
+into product_details values('Headache Pills','Medical Products','No',9.75)
+into product_details values('imported chocolates 2','Food','yes',11.25)
+select * from dual;

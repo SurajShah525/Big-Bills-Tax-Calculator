@@ -1,0 +1,9 @@
+Following are the different assumptions made:
+
+1) Each product has a different name(hence, it is made the primary key)
+2) All products in store are in stock, and customer can select one qty of a product at a time, adding it to the cart.
+3) Price of the product is fixed, and can be entered only while adding a new item (we can give options to edit the prices)
+4) No error messages are displayed back to the user on gui. Provisions for the same are made though. Simple boolean value can be used to reutrn the success or failure state of a query.
+5) Like stated and gathered( by me), sales tax is rounded UP to 0.05. meaning 6.12 will be rounded to 6.15, and not 6.10.
+6) Clear Bill Button is added to clear the current bill and start a new one.
+7) Customer details and bill amounts are not currently stored in database, but only displayed back, as required in the output.
